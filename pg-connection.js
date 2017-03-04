@@ -7,10 +7,10 @@ var props ={
   heroku:{
     client: 'pg',
     connection: {
-      host: 'ec2-54-228-212-74.eu-west-1.compute.amazonaws.com',
-      user: 'iygqdbpipxdgtd',
-      password: 'e1e23624cf7ef3584bb01da7d2939ce39742e0f4ef94661aa6f318dc9a0a24f7',
-      database: 'd8err25c2g5oh9',
+      host: 'ec2-23-21-204-166.compute-1.amazonaws.com',
+      user: 'ispotzewzvcuvz',
+      password: 'c35d5418f6c1cd4575b5b987bf243b05da319c25fc4238b7e660b7e6074534a4',
+      database: 'd76r6um0kd7a3h',
       port: 5432
 
     },
