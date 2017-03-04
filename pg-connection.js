@@ -1,9 +1,18 @@
-/**
- * Created by Worker on 08.01.2017.
- */
+
 'use strict';
 var ENV = process.env.NODE_ENV;
 var props ={
+  local : {
+    client: 'pg',
+    connection: {
+      host: '127.0.0.1',
+      user: 'postgres',
+      password: '586393',
+      database: 'usergithub',
+      port: 5432
+
+    }
+  },
   heroku:{
     client: 'pg',
     connection: {
@@ -13,7 +22,7 @@ var props ={
       database: 'd76r6um0kd7a3h',
       port: 5432
 
-    },
+    }
 
   }
 };

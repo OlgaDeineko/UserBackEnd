@@ -1,6 +1,3 @@
-/**
- * Created by Worker on 05.11.2016.
- */
 'use strict'
 
 const router = require('koa-router')(),
