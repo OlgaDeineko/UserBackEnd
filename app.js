@@ -14,7 +14,7 @@ const koa = require('koa'),
 // }
 // app.use(allowCrossDomain);
 app.use(cors());
-app.use(route.get("/useractivity", userActivityController.getUserActivity));
+app.use(route.get("/userActivity", userActivityController.getUserActivity));
 
 
 var port = process.env.PORT||3000;
