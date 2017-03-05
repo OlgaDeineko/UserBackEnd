@@ -20,15 +20,25 @@ function *saveUserActivity() {
   let activity = yield parse(this);
   yield user.saveUserActivity(activity);
     this.status = 201;
-
 }  catch (err) {
   console.log(err);
   this.status = 500;
   this.body = {error: err.message}
 }
 }
-
+function *deleteUserActivity() {
+    try {
+      let result = yield user.deleteAllUserActivity();
+      this.status = 410;
+      this.body = result;
+    } catch (err) {
+      console.log(err);
+      this.status = 500;
+      this.body = {error: err.message}
+    }
+  }
 module.exports = {
   getUserActivity: getUserActivity,
-  saveUserActivity:saveUserActivity
+  saveUserActivity:saveUserActivity,
+  deleteUserActivity:deleteUserActivity
 }

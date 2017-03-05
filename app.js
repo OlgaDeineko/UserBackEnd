@@ -16,6 +16,7 @@ const koa = require('koa'),
 app.use(cors());
 app.use(route.get("/", userActivityController.getUserActivity));
 app.use(route.post("/useractivity", userActivityController.saveUserActivity));
+app.use(route.del("/delete", userActivityController.deleteUserActivity));
 
 
 var port = process.env.PORT||3000;

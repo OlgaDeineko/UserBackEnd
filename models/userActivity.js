@@ -9,6 +9,9 @@ class User {
   static *saveUserActivity(activity) {
     return  yield knex('useractivity').insert(activity);
   }
+  static *deleteAllUserActivity() {
+  return  yield knex('useractivity').del();
+}
 
 }
 module.exports = User;
