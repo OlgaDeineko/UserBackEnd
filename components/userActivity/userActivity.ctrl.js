@@ -29,7 +29,7 @@ function *saveUserActivity() {
 function *deleteUserActivity() {
     try {
       let result = yield user.deleteAllUserActivity();
-      this.status = 410;
+      this.status = 200;
       this.body = result;
     } catch (err) {
       console.log(err);

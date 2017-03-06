@@ -10,7 +10,7 @@ class User {
     return  yield knex('useractivity').insert(activity);
   }
   static *deleteAllUserActivity() {
-  return  yield knex('useractivity').del();
+  return  yield knex('useractivity').del('*');
 }
 
 }
